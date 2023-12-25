@@ -5,13 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feliz Natal, Feliz Navidad & Merry Christmas</title>
     <link rel="stylesheet" href="./src/style/card.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div id="felizNatal"></div>
-<div id="gifContainer"></div> 
-<button onclick="imprimirGIF()">Christmas Card</button>
+    <!-- Banner com Bootstrap -->
+    <div id="felizNatal" >
+        <div id="gifContainer"></div>
+    </div>
 
-<script src="./src/js/script.js"></script>
+    
+
+    <!-- Modal para exibir o cartão de Natal -->
+    <div class="modal fade" id="christmasCardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Christmas Card</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Conteúdo do cartão de Natal -->
+                    <img src="src/imgs/gif-dev-mads.gif" class="gif-element" alt="Christmas Card">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+    <script>
+        // Mover o botão para o rodapé
+        document.addEventListener("DOMContentLoaded", function() {
+            var body = document.body;
+            var meuBotao = document.getElementById("meuBotao");
+            body.appendChild(meuBotao);
+        });
+    </script>
+    
 </body>
+
 </html>
+<footer id="meuFooter">
+    <!-- Botão com Bootstrap -->
+    <button id="meuBotao" class="btn btn-danger mt-4" data-toggle="modal" data-target="#christmasCardModal">Open Christmas Card</button>
+</footer>

@@ -9,7 +9,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 #felizNatal {
@@ -22,6 +21,8 @@ button {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
+    border: 2px solid red;
+    border-radius: 8px;
 }
 
 img.gif-element {
@@ -29,4 +30,9 @@ img.gif-element {
     max-width: 600px; 
     height: auto;
     z-index: 2;
+}
+
+/* Adicione esta regra para mover o botão para a parte inferior */
+body {
+    margin-top: 10000vh;
 }
