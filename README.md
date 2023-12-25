@@ -9,13 +9,13 @@
 
 ## Follow Me
 
-* [LinkedIn]([Márcio Adriano | LinkedIn](https://www.linkedin.com/in/mads1974/))
-* [Github]([MADS1974 (Márcio Adriano) (github.com)](https://github.com/MADS1974))
+* [Márcio Adriano | LinkedIn](https://www.linkedin.com/in/mads1974/)
+* [Github](https://github.com/MADS1974)
 
 
 
 ## Chritmas Card
 
-* [Christmas Card](https://)
+* [Christmas Card Page](https://mads1974.github.io/christmascard.github.io/)
 
 
